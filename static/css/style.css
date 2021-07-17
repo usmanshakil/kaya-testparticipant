@@ -1,0 +1,220 @@
+.checkbox:checked + .check-icon {
+    display: flex;
+}
+html,
+body{
+    height: 100%;
+}
+body{
+    overflow: hidden !important;
+}
+#__next {
+    height: 100%;
+}
+.f-p-t {
+    font-family: "Poppins", sans-serif;
+}
+.f-r-t {
+    font-family: "Roboto", sans-serif;
+}
+
+.width {
+    width: 311px;
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none; /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 8px; /* Specified height */
+    background: linear-gradient(90deg, #eff2fe 0%, #6666b3 100%); /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+    transition: opacity 0.2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #6666b3; /* Green background */
+    border-radius: 50%;
+    cursor: pointer; /* Cursor on hover */
+    margin-left: -1px;
+}
+/* 67% */
+@media only screen and (min-height: 1350px) {
+    .h-for-overflow-less2{        
+        min-height: 980px !important;
+        /* display: none !important; */
+    }
+    .h-for-overflow-less{        
+        height: 350px !important;
+        /* display: none !important; */
+    }
+    .h-for-overflow{        
+        min-height: 1150px !important;
+        /* display: none !important; */
+    }
+    .h-for-overflow-more{        
+        min-height: 1290px !important;
+    }
+    .h-for-overflow-detail{        
+        height: 1420px !important;
+    }
+}
+/* 75% */
+@media only screen and (min-height: 1250px) {
+    .h-for-overflow-less2{        
+        min-height: 780px !important;
+        /* display: none !important; */
+    }
+    .h-for-overflow{        
+        height: 980px !important;
+        /* display: none !important; */
+    }
+    .h-for-overflow-more{        
+        height: 1120px !important;
+    }
+    .h-for-overflow-detail{        
+        height: 1020px !important;
+    }
+}
+
+/* 80% */
+/* @media only screen and (min-height: 1120px) {
+    .h-for-overflow{        
+        height: 980px !important;
+        display: none !important;
+    }
+    .h-for-overflow-more{        
+        height: 1220px !important;
+        display: none !important;
+    }
+} */
+
+/* 90% */
+@media only screen and (max-height: 1150px) {
+    .h-for-overflow-less2{        
+        min-height: 580px !important;
+        /* display: none !important; */
+    }
+    .h-for-overflow{        
+        height: 780px !important;
+        /* display: none !important; */
+    }
+    .h-for-overflow-more{        
+        height: 925px !important;
+    }
+    .h-for-overflow-detail{        
+        height: 820px !important;
+    }
+}
+
+/* 100% */
+@media only screen and (max-height: 1050px) {
+    .h-for-overflow-less2{        
+        min-height: 480px !important;
+        /* display: none !important; */
+    }
+    .h-for-overflow{        
+        height: 670px !important;
+        /* display: none !important; */
+    }
+    .h-for-overflow-more{        
+        height: 820px !important;
+    }
+    .h-for-overflow-detail{        
+        height: 720px !important;
+    }
+}
+
+/* 110% */
+@media only screen and (max-height: 900px) {
+    .h-for-overflow-less{        
+        height: 400px !important;
+        /* display: none !important; */
+    }
+    .h-for-overflow-less2{        
+        min-height: 380px !important;
+        /* display: none !important; */
+    }
+    .h-for-overflow{        
+        height: 560px !important;
+        /* display: none !important; */
+    }
+    .h-for-overflow-more{        
+        height: 730px !important;
+    }
+    .h-for-overflow-detail{        
+        height: 640px !important;
+    }
+}
+
+/* 125% */
+@media only screen and (max-height: 800px) {
+    .h-for-overflow-less2{        
+        height: 150px !important;
+        /* display: none !important; */
+    }
+    .h-for-overflow-less{        
+        height: 350px !important;
+        /* display: none !important; */
+    }
+    .h-for-overflow{        
+        height: 410px !important;
+        /* display: none !important; */
+    }
+    .h-for-overflow-more{        
+        height: 620px !important;
+    }
+    .h-for-overflow-detail{        
+        height: 520px !important;
+    }
+}
+
+@media (min-height: 1000px) {
+    .height-div {
+        /*height: 100vh!important;*/
+    }
+}
+
+.customWidth {
+    width: 350px;
+}
+.font-11{
+    font-size: 11px;
+}
+
+#acc_Pro select:disabled,
+#acc_Pro textarea:disabled {
+    background-color: #fafafa;
+    opacity: 1;
+}
+.text-gray-dark {
+    color: #8c8c8c;
+}
+.sidebar {
+    background-color: linear-gradient(90deg, #f1effe 6.14%, #eef5fb 100%);
+    box-shadow: 2px 4px 12px #d5dbf2;
+}
+.black {
+    color: #252c39;
+}
+.menu-in-active {
+    box-shadow: 2px 4px 12px #d5dbf2;
+    border-radius: 0px 8px 8px 0px;
+}

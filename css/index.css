@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.width {
+    width: 311px;
+}
+.billing input:disabled {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+/* Hide input spinners */
+.billing input::-webkit-outer-spin-button,
+.billing input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media (min-width: 1200px) and (max-width: 1560px) {
+    .text-base{
+        font-size: 0.875rem;
+    }
+    .text-5xl {
+        font-size: 2rem;
+    }
+    .text-2xl {
+        font-size: 1.25rem;
+    }
+    .text-lg {
+        font-size: 1rem;
+    }
+}
