@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import TextSmall from "../../../common-components/text/small";
 import OutsideClick from "react-outside-click-handler";
 import SimpleButton from "../../../unique-components/simple-button"
-import { deleteParticipantGroup, updateParticipantGroup } from "../../../../api/graphql/customMutations";
-import { getGroup } from "../../../../api/graphql/queries";
+import { deleteParticipantGroup, updateParticipantGroup } from "../../../../apii/graphql/customMutations";
+import { getGroup } from "../../../../apii/graphql/queries";
 import { API, graphqlOperation } from "aws-amplify";
 import {emailRequest} from "../../../../config";
-import { api } from "../../../../helpers/api";
+import { apii } from "../../../../helpers/apii";
 const Index = ({ setModal, current, participant, refreshList, dispatch }) => {
     const [loading, setLoading] = useState(false);
 
@@ -61,7 +61,7 @@ const Index = ({ setModal, current, participant, refreshList, dispatch }) => {
                 groupName: item.group.name
             }
         }
-        api.postApi(emailRequest, payload).then((res)=>{}).catch((err)=>{})
+        apii.postApi(emailRequest, payload).then((res)=>{}).catch((err)=>{})
         refreshList(current.id);
         setModal(false);
         setLoading(false);

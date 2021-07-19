@@ -8,7 +8,7 @@ import MainArea from "../../major-components/mainArea";
 import Link from "next/link";
 import PhotoUploader from "../../common-components/PhotoUploader";
 import csc from "country-state-city";
-import { updateParticipant } from "../../../api/graphql/mutations";
+import { updateParticipant } from "../../../apii/graphql/mutations";
 import { API, graphqlOperation } from "aws-amplify";
 import DeleteDisabled from "./modals";
 import { getWindowHeight } from "../../function";

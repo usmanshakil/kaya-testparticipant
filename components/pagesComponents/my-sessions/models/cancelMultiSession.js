@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import TextSmall from "../../../common-components/text/small";
 import OutsideClick from "react-outside-click-handler";
 import SimpleButton from "../../../unique-components/simple-button"
-import { deleteParticipantGroup } from "../../../../api/graphql/customMutations";
-import { getGroup } from "../../../../api/graphql/queries";
+import { deleteParticipantGroup } from "../../../../apii/graphql/customMutations";
+import { getGroup } from "../../../../apii/graphql/queries";
 import { API, graphqlOperation } from "aws-amplify";
 import sortArray from "array-sort";
 import { emailRequest } from "../../../../config";
-import { api } from "../../../../helpers/api";
+import { apii } from "../../../../helpers/apii";
 
 const Index = ({ setModal, current, participant, refreshList }) => {
     const [loading, setLoading] = useState(false);
@@ -49,7 +49,7 @@ const Index = ({ setModal, current, participant, refreshList }) => {
                 groupName: item.group.name
             }
         }
-        api.postApi(emailRequest , payload1).then((res)=>{}).catch((err)=>{})
+        apii.postApi(emailRequest , payload1).then((res)=>{}).catch((err)=>{})
         refreshList(current.groupId);
         setModal(false);
         setLoading(false);
@@ -62,7 +62,7 @@ const Index = ({ setModal, current, participant, refreshList }) => {
                 groupId: current.group.id,
             },
         };
-        api.postApi(emailRequest, payload)
+        apii.postApi(emailRequest, payload)
             .then((res) => {})
             .catch((err) => {
                 console.error("err", err);

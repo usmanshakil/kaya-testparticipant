@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import TextSmall from "../../common-components/text/small";
 import SimpleButton from "../../unique-components/simple-button"
 import OutsideClick from "react-outside-click-handler";
-import { deleteParticipantGroup } from "../../../api/graphql/mutations";
+import { deleteParticipantGroup } from "../../../apii/graphql/mutations";
 import { API, graphqlOperation } from "aws-amplify";
 import Router from "next/router";
 

@@ -3,7 +3,7 @@ import { Auth } from "aws-amplify";
 import Router from "next/router";
 import Loader from "./common-components/loader";
 import {Consumer} from '../store';
-import { getParticipantMain } from "../api/graphql/customQueries";
+import { getParticipantMain } from "../apii/graphql/customQueries";
 import { API, graphqlOperation } from "aws-amplify";
 import { useIdleTimer } from 'react-idle-timer'
 

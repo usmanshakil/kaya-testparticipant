@@ -2,10 +2,10 @@ import React ,{useState} from "react";
 import TextSmall from "../../common-components/text/small"
 import SimpleInput from "../../common-components/inputs/simple-input"
 import axios from 'axios';
-import { api } from '../../../helpers/api';
+import { apii } from '../../../helpers/apii';
 import { API, graphqlOperation } from 'aws-amplify';
 import { emailRequest, paymentPath } from '../../../config';
-import { updateParticipant } from '../../../api/graphql/mutations';
+import { updateParticipant } from '../../../apii/graphql/mutations';
 import IconButton from "../../unique-components/icon-button";
 import Link from "next/link";
 

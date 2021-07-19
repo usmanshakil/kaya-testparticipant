@@ -4,7 +4,7 @@ import "../css/index.css";
 import Head from "next/head";
 import Amplify from "aws-amplify";
 import { Provider } from "../store";
-import config from "../api/aws-exports";
+import config from "../apii/aws-exports";
 import Access from "../components/access";
 import Loader from "../components/common-components/loader/index";
 // import { Auth0Provider } from '@auth0/auth0-react';

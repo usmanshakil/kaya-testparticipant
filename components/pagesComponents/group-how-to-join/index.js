@@ -9,9 +9,9 @@ import MainArea from "../../major-components/mainArea";
 import Sidebar from "../../major-components/sideBar";
 import InstructionModal from "../../pagesComponents/modals/instructions";
 import EventSuccess from "../../pagesComponents/modals/event-success";
-import { getGroup } from "../../../api/graphql/customQueries";
-import { createParticipantGroup } from "../../../api/graphql/customMutations";
-import { listParticipantGroups } from "../../../api/graphql/customQueries";
+import { getGroup } from "../../../apii/graphql/customQueries";
+import { createParticipantGroup } from "../../../apii/graphql/customMutations";
+import { listParticipantGroups } from "../../../apii/graphql/customQueries";
 import { API, graphqlOperation } from "aws-amplify";
 import Loader from "../../common-components/loader";
 import Link from "next/link";
@@ -23,7 +23,7 @@ import {
     emailRequest
 } from "../../../config";
 import ReportClinicain from "../modals/report-clinician";
-import { createReport } from "../../../api/graphql/mutations";
+import { createReport } from "../../../apii/graphql/mutations";
 import { openPopupWidget } from "react-calendly";
 import Router from "next/router";
 import CancelSingleSession from "./models/cancelSingleSession";
@@ -32,7 +32,7 @@ import sortArray from "array-sort";
 import { standardDate, getWindowHeight } from "../../function";
 import TagGroup from "../../common-components/tags/tag-single";
 import ConfirmModel from "../../pagesComponents/modals/my-groups"
-import { api } from "../../../helpers/api";
+import { apii } from "../../../helpers/apii";
 const Index = ({ id, participant, invited, userId }) => {
     const [modal, setModal] = useState(false);
     const [group, setGroup] = useState(false);

@@ -4,7 +4,7 @@ import Sidebar from '../../major-components/sideBar';
 import MainArea from '../../major-components/mainArea';
 import Link from 'next/link';
 import SimpleButton from '../../unique-components/simple-button';
-import { updateParticipant } from '../../../api/graphql/mutations';
+import { updateParticipant } from '../../../apii/graphql/mutations';
 import { API, graphqlOperation } from 'aws-amplify';
 import Loader from '../../common-components/loader';
 import { getWindowHeight } from '../../function';

@@ -6,7 +6,7 @@ import MainArea from '../../major-components/mainArea';
 import {
   listGroupsCustom,
   listGroups,
-} from '../../../api/graphql/customQueries';
+} from '../../../apii/graphql/customQueries';
 import { API, graphqlOperation } from 'aws-amplify';
 import Loader from '../../common-components/loader';
 import arraySort from 'array-sort';

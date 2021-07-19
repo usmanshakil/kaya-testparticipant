@@ -7,7 +7,7 @@ import MessageBox from '../../unique-components/text-box/message-box/index';
 import Button from '../../common-components/buttonlogin';
 import Pagination from '../../unique-components/pagination';
 import { useRouter } from 'next/router';
-import { updateParticipant } from '../../../api/graphql/mutations';
+import { updateParticipant } from '../../../apii/graphql/mutations';
 import { API, graphqlOperation, Auth } from 'aws-amplify';
 
 const Index = () => {

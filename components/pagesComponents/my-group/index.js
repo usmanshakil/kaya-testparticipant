@@ -3,7 +3,7 @@ import Sidebar from "../../major-components/sideBar";
 import MainArea from "../../major-components/mainArea";
 import Loader from "../../common-components/loader";
 import Link from "next/link";
-import { getParticipantGroupDetail, getParticipantDetail } from "../../../api/graphql/customQueries";
+import { getParticipantGroupDetail, getParticipantDetail } from "../../../apii/graphql/customQueries";
 import { API, graphqlOperation } from "aws-amplify";
 import { standardDate } from "../../function";
 import arraySort from "array-sort";

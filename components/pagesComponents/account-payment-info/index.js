@@ -7,10 +7,10 @@ import SideBar from '../../major-components/sideBar';
 import MainArea from '../../major-components/mainArea';
 import axios from 'axios';
 import { emailRequest, paymentPath } from '../../../config';
-import { updateParticipant } from '../../../api/graphql/mutations';
+import { updateParticipant } from '../../../apii/graphql/mutations';
 import { API, graphqlOperation } from 'aws-amplify';
 import { getWindowHeight } from '../../function';
-import { api } from '../../../helpers/api';
+import { apii } from '../../../helpers/apii';
 import csc from 'country-state-city';
 
 const Index = ({ participant }) => {
@@ -186,7 +186,7 @@ const Index = ({ participant }) => {
       }
     };
 
-    await api.postApi(emailRequest, payload).then((res) => {
+    await apii.postApi(emailRequest, payload).then((res) => {
     }).catch((err) => {
       console.log(err);
     });

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import csc from 'country-state-city';
-import { createParticipant } from '../../../api/graphql/mutations';
+import { createParticipant } from '../../../apii/graphql/mutations';
 import { API, graphqlOperation, Auth } from 'aws-amplify';
 import Router from 'next/router';
 import PhotoUploader from '../../common-components/PhotoUploader';

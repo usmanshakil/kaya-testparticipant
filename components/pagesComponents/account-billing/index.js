@@ -4,7 +4,7 @@ import TextSmall from '../../common-components/text/small';
 import SideBar from '../../major-components/sideBar';
 import MainArea from '../../major-components/mainArea';
 import Link from 'next/link';
-import { listPaymentss } from '../../../api/graphql/queries';
+import { listPaymentss } from '../../../apii/graphql/queries';
 import { API, graphqlOperation } from 'aws-amplify';
 import Loader from '../../common-components/loader';
 import sortArray from 'array-sort';

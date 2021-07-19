@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import TextSmall from "../../../common-components/text/small";
 import OutsideClick from "react-outside-click-handler";
 import SimpleButton from "../../../unique-components/simple-button"
-import { deleteParticipantGroup } from "../../../../api/graphql/mutations";
-import { getGroup } from "../../../../api/graphql/queries";
+import { deleteParticipantGroup } from "../../../../apii/graphql/mutations";
+import { getGroup } from "../../../../apii/graphql/queries";
 import { API, graphqlOperation } from "aws-amplify";
 import Router from "next/router";
 import {emailRequest} from "../../../../config";
-import { api } from "../../../../helpers/api";
+import { apii } from "../../../../helpers/apii";
 const Index = ({ setModal, group, participant }) => {
     const [loading, setLoading] = useState(false);
 
@@ -36,7 +36,7 @@ const Index = ({ setModal, group, participant }) => {
                   groupName: data.name
                 }
         }
-        await api.postApi(emailRequest , payload).then((res)=>{
+        await apii.postApi(emailRequest , payload).then((res)=>{
             
         }).catch((err)=>{
 
