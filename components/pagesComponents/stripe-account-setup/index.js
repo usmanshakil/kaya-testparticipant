@@ -2,7 +2,7 @@ import React ,{useState} from "react";
 import TextSmall from "../../common-components/text/small"
 import SimpleInput from "../../common-components/inputs/simple-input"
 import axios from 'axios';
-import { api } from '../../../helpers/api';
+import { api } from '../../../helpers/api'
 import { API, graphqlOperation } from 'aws-amplify';
 import { emailRequest, paymentPath } from '../../../config';
 import { updateParticipant } from '../../../apii/graphql/mutations';
