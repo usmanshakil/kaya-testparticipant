@@ -71,7 +71,7 @@ const Index = () => {
 
       
       <Link href="/api/auth/login" >
-         LOGIN BTN
+         LOGIN BTNnnn
       </Link>
       <hr></hr>
       <br></br>
