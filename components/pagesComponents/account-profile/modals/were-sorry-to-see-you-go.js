@@ -5,7 +5,7 @@ import SimpleInput from "../../../common-components/textInput/index"
 import { getParticipant } from "../../../../apii/graphql/customQueries";
 import { deleteParticipantGroup, deleteReport, deleteParticipant } from "../../../../apii/graphql/mutations";
 import { API, graphqlOperation, Auth } from "aws-amplify";
-import { apii } from "../../../../helpers/apii";
+import { api } from "../../../../helpers/api";
 import { disableUser, deleteUser, emailRequest } from "../../../../config";
 import Router from "next/router";
 
